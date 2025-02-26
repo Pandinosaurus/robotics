@@ -1,0 +1,82 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Introduction to Robotics and Perception
+  keywords: [AI, Robotics, Perception, Planning, Learning]
+  numbering:
+    headings: enabled
+  authors:
+    - Frank Dellaert
+    - Seth Hutchinson
+  github: https://github.com/gtbook/robotics
+  bibliography:
+    - references.bib
+  exports:
+    - format: tex
+      template: plain_latex_book
+      output: _build/exports/tex/robots.tex
+      articles:
+        - S00_preface.ipynb
+        - S10_introduction.ipynb
+        - S11_models.ipynb
+        - S12_reasoning.ipynb
+        - S13_math.ipynb
+        - S20_sorter_intro.ipynb
+        - S21_sorter_state.ipynb
+        - S22_sorter_actions.ipynb
+        - S23_sorter_sensing.ipynb
+        - S24_sorter_perception.ipynb
+        - S25_sorter_decision_theory.ipynb
+        - S26_sorter_learning.ipynb
+        - S27_sorter_summary.ipynb
+        - S30_vacuum_intro.ipynb
+        - S31_vacuum_state.ipynb
+        - S32_vacuum_actions.ipynb
+        - S33_vacuum_sensing.ipynb
+        - S34_vacuum_perception.ipynb
+        - S35_vacuum_decision.ipynb
+        - S36_vacuum_RL.ipynb
+        - S37_vacuum_summary.ipynb
+        - S40_logistics_intro.ipynb
+        - S41_logistics_state.ipynb
+        - S42_logistics_actions.ipynb
+        - S43_logistics_sensing.ipynb
+        - S44_logistics_perception.ipynb
+        - S45_logistics_planning.ipynb
+        - S46_logistics_learning.ipynb
+        - S47_logistics_summary.ipynb
+        - S50_diffdrive_intro.ipynb
+        - S51_diffdrive_state.ipynb
+        - S52_diffdrive_actions.ipynb
+        - S53_diffdrive_sensing.ipynb
+        - S54_diffdrive_perception.ipynb
+        - S55_diffdrive_planning.ipynb
+        - S56_diffdrive_learning.ipynb
+        - S57_diffdrive_summary.ipynb
+        - S60_driving_intro.ipynb
+        - S61_driving_state.ipynb
+        - S62_driving_actions.ipynb
+        - S63_driving_sensing.ipynb
+        - S64_driving_perception.ipynb
+        - S65_driving_planning.ipynb
+        - S66_driving_DRL.ipynb
+        - S67_driving_summary.ipynb
+        - S70_drone_intro.ipynb
+        - S71_drone_state.ipynb
+        - S72_drone_actions.ipynb
+        - S73_drone_sensing.ipynb
+        - S74_drone_perception.ipynb
+        - S75_drone_planning.ipynb
+        - S76_drone_learning.ipynb
+        - S77_drone_summary.ipynb
+        - genindex.md
+  settings:
+    myst_to_tex:
+      code_style: minted
+  plugins:
+    - plugins/xref-prefix-plugin.mjs
+site:
+  template: book-theme
+  title: Introduction to Robotics and Perception
+  options:
+    logo: logo.png
